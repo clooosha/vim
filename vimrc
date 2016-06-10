@@ -20,6 +20,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'ervandew/supertab'
 "NERDTree-файловый менеджер
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
 
 let mapleader=","
 "Чтение настроек
@@ -37,7 +38,7 @@ set hidden
 "Кол строк
 set history=500
 set nowrap
-set tabstop=2
+set tabstop=4
 set shiftwidth=2
 set expandtab
 set smartindent
@@ -57,7 +58,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 nnoremap <Leader><Leader> :e#<CR>
 
 "mapping arrows для переключения между окнами
-map <C-k> <C-w><p>
+map <C-k> <C-w><Up>
 map <C-j> <C-w><Down>
 map <C-l> <C-w><Right>
 map <C-h> <C-w><Left>

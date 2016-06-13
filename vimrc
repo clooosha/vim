@@ -21,6 +21,8 @@ Plugin 'ervandew/supertab'
 "NERDTree-файловый менеджер
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+"Автодополнение для С++
+Plugin 'Valloric/YouCompleteMe'
 
 let mapleader=","
 "Чтение настроек

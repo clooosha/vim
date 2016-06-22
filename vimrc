@@ -29,6 +29,9 @@ let mapleader=","
 map <leader>s :source ~/.vim/vimrc<CR>
 
 syntax on
+"Совеместимость с vi
+set nocompatible
+
 set background=dark
 colorscheme Tomorrow-Night-Eighties
 set guifont=Menlo\ Regular:h18
@@ -80,4 +83,7 @@ autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 "Скрытие ненужных файлов
 let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']
+"Выход из vim'a, если открыт только NerdTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 

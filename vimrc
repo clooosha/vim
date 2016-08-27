@@ -53,6 +53,9 @@ set showmatch
 
 "Подсветка слов при поиске
 set hlsearch
+set incsearch
+set ignorecase
+
 "Отмена поиска с помощью Escape
 nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 
